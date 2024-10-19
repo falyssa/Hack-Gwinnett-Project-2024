@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- Page Styling -->
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(33, 42, 62);
+    }
+    header {
+        background-color: rgb(27, 76, 129);
+        color: rgb(255, 255, 255);
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        text-align: center;
+        padding: 20px 0;
+    }
+    nav a {
+        margin: 0 15px;
+        color: rgb(33, 11, 12);
+        text-decoration: none;
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #98daec;
+    }
+    nav a:hover {
+            color: #ffffff;
+            background-color: #120ab2;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        section {
+            margin: 5px auto;
+            max-width: 1100px;
+            padding: 20px;
+            background-color: rgb(17, 19, 44);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        footer {
+            background-color: #8fa8c4;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .center {
+  line-height: 200px;
+  height: 200px;
+  
+  text-align: center;
+}
+</style>
+
+<!-- Content on the page -->
+</head>
+<body>
+    <header>
+        <h1 id="title":>Resource Hub</h1>
+    </header>
+    <h3 id="h1">Select a language</h3>
+    <select name="" id="">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+    </select>
+    <nav>
+        <a href="home-page.html">Home</a>
+        <a href="about-page.html">About</a>
+        <a href="services.html">Resource Hub</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+   
+    <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3396865.5002606907!2d-87.06293793017947!3d33.7541672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgeorgia%20vocational%20rehabilitation%20agency!5e0!3m2!1sen!2sus!4v1729357305208!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script>
+        const translations = {
+            en: {
+                select: "Select a Language",
+                title: "Resource Hub",
+                par: "A New Way to Navigate the Web",
+                welcome: "This is the homepage. Welcome to my website!"
+            },
+            es: {
+                select: "Seleccione un Idioma",
+                title: "Centro de Recursos",
+                par: "Una Nueva Forma de Navegar por la Web",
+                welcome: "¡Esta es la página de inicio! ¡Bienvenido a mi sitio web!"
+            }
+        };
+
+        const languageSelect = document.getElementById("languageSelect");
+        let h1 = document.getElementById("h1");
+        let title = document.getElementById("title");
+        let par = document.getElementById("par");
+        let welcome = document.getElementById("welcome");
+
+        languageSelect.addEventListener("change", (event) => {
+            setLanguage(event.target.value);
+        });
+
+        const setLanguage = (language) => {
+            h1.innerText = translations[language].select;
+            title.innerText = translations[language].title;
+            par.innerText = translations[language].par;
+            welcome.innerText = translations[language].welcome;
+        };
+    </script>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
