@@ -5,10 +5,10 @@
 <script src="newdetect.js" type="module"></script>
 
 <body>
-  <h1>Hand landmark detection using the MediaPipe HandLandmarker task</h1>
+  <h1>Use your hand motions to control the computer!</h1>
 
   <section id="demos" class="invisible">
-    <h2>Demo: Detecting Images</h2>
+    <h2>Detecting Your Hand</h2>
     <p><b>Click on an image below</b> to see the key landmarks of the hands.</p>
 
     <div class="detectOnClick">
@@ -18,8 +18,8 @@
       <img src="https://assets.codepen.io/9177687/couple-gb7cb5db4c_1920.jpg" width="100%" crossorigin="anonymous" title="Click to get detection!" />
     </div>
 
-    <h2>Demo: Webcam continuous hands landmarks detection</h2>
-    <p>Hold your hand in front of your webcam to get real-time hand landmarker detection.</br>Click <b>enable webcam</b> below and grant access to the webcam if prompted.</p>
+    <h2>Demo: Hand detection</h2>
+    <p>Hold your hand in front of your webcam to get real-time hand detection.</br>Click <b>enable webcam</b> below and grant access to the webcam if prompted.</p>
 
     <div id="liveView" class="videoView">
       <button id="webcamButton" class="mdc-button mdc-button--raised">
@@ -31,4 +31,7 @@
         <canvas class="output_canvas" id="output_canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
       </div>
     </div>
+
+    <h2 id="detected-motion"></h2>
+
   </section>

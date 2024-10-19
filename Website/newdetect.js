@@ -106,6 +106,9 @@ import {
       });
       drawLandmarks(cxt, landmarks, { color: "#FF0000", lineWidth: 1 });
     }
+    var t = document.getElementById("detected-motion").textContent;
+    var y = document.createTextNode("Open palm");
+    t.appendChild(y)
   }
   
   /********************************************************************
