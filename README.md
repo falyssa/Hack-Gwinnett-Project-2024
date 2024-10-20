@@ -1,2 +1,3 @@
 # Hack-Gwinnett-Project-2024
-Wtv Anna, Falyssa, and Joi cook up.
+
+Anna, Falyssa, and Joi's 2nd Hackathon Project
