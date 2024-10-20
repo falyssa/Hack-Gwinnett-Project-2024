@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         messageElement.className = "message";
         messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
         chatbox.appendChild(messageElement);
-        chatbox.scrollTop = chatbox.scrollHeight; // Scroll to the latest message
+        chatbox.scrollTop = chatbox.scrollHeight; 
     }
 
     async function getOpenAIResponse(userMessage) {
